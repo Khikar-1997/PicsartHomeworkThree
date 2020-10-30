@@ -3,14 +3,20 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        //Task 2
-        //Create an array and fill it with numbers from 1:1000.
+        //Task 3
+        //Create an array and fill it with odd numbers from -20:20
 
-        int[] array = new int[1001];
+        int countOfOddNumbers = 0;
 
-        for (int i = 1; i < array.length; i++) {
-            array[i] = i;
-            System.out.print(array[i] + ",");
+        for (int i = -19; i < 20; i += 2) {
+            countOfOddNumbers++;
+        }
+
+        int[] array = new int[countOfOddNumbers];
+
+        for (int j = 0, i = -19; j < array.length; i += 2, j++) {
+            array[j] = i;
+            System.out.print(array[j] + ",");
         }
     }
 }
