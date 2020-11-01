@@ -3,13 +3,17 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        //Task 4
-        //Create an array and fill it. Print all elements which can be divided by 5.
+        //Task 5
+        //Create an array and fill it. Print all elements which are between 24.12 and 467.23.
 
-        int[] array = {15, 17, 109, 100, 187, 165, 145};
+        double[] array = new double[500];
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 5 == 0){
+            array[i] = i;
+        }
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > 24.12 && array[i] < 467.23) {
                 System.out.print(array[i] + ",");
             }
         }
